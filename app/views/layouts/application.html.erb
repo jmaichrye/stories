@@ -15,8 +15,28 @@
   	<script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
   	<script src="assets/javascripts/application.js"></script>
 <body>
-
+  
+<div id="sidr">
+  <ul>
+    <li><a href="#"><%=link_to 'Home', '/'%></a></li>
+    <li><a href="#"><%=link_to 'About', 'about'%></a></li>
+    <li><a href="#"><%=link_to 'Cntact', 'contact'%></a></li>
+  </ul>
+</div>
+  
 <%= yield %>
 
+<div class="footer"> 
+  <div class="container"> 
+    <p>A Shutterbugg Project</p> 
+  </div> 
+</div> 
+  
+  
+<script>
+  $(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+</script>
 </body>
 </html>
