@@ -1,0 +1,22 @@
+<div class="new-main"> 
+    <a id="simple-menu" href="#sidr"><img  src="https://s3.amazonaws.com/codecademy-content/projects/z2d/stories/menu-black.svg" width="24px" /> </a>
+    <div class="container"> 
+      <p>Please provide your name and e-mail and we will get back with you soon</p>
+        <%= form_for(@signup) do |f| %>  
+  				<div class="field"> 
+    				<%= f.label :'First Name' %> <br>
+    				<%= f.text_area :firstname %> 
+  				</div> 
+      		<div class="field"> 
+    				<%= f.label :Email %> <br>
+    				<%= f.text_area :email %> 
+  				</div> 
+  				<div class="actions"> 
+    				<%= f.submit "Signup" %> 
+  				</div> 
+				<% end %>
+      
+      
+  	</div> 
+</div> 
+      
